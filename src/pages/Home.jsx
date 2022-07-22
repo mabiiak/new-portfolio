@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import picture from '../images/mabi-picture.jpeg';
-import iconGit from '../images/icons-github.png';
-import iconLinkedin from '../images/icons-linkedin.png';
+import picture from '../midias/images/mabi-picture.jpeg';
+import iconGit from '../midias/images/icons-github.png';
+import iconLinkedin from '../midias/images/icons-linkedin.png';
 
 function Home() {
   return (
