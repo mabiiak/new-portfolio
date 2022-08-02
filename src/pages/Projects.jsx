@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import projects from '../utils/infos';
-import repo from '../midias/images/search-white.png';
-import iconGitgub from '../midias/images/icons-github-white.png';
-import home from '../midias/images/home.png';
+import repo from '../images/search-white.png';
+import iconGitgub from '../images/icons-github-white.png';
+import home from '../images/home.png';
+import Carousel from '../components/Carousel';
 
 function Projects() {
   return (
@@ -12,11 +13,7 @@ function Projects() {
       {
         projects.map((project) => (
           <div>
-            <video width="320" height="240" controls>
-              <source src={ project.video } type="video/mp4" />
-              <source src="movie.ogg" type="video/ogg" />
-                Your browser does not support the video tag.
-            </video>
+            <Carousel images={ project.images } />
             <h2>{ project.name }</h2>
             <p>{ project.description }</p>
             <div>
