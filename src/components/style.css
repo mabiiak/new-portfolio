@@ -1,0 +1,34 @@
+.carousel {
+  position: relative;
+  display: flex;
+  width:400px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+} 
+
+.item {
+  flex: none;
+  height:224px;
+  width:400px;
+}
+
+.item img {
+  width: 100%;
+}
+
+.button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  display: inline-block;
+  background-color: rgb(195, 195, 195);
+  border-radius: 50%;
+  margin: 5px 10px;
+  cursor: pointer;
+}
+
