@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import './style.css';
+import triangle from '../images/triangle.png';
 
 function Carousel({images}) {
   const carousel = useRef(null);
@@ -32,13 +33,13 @@ function Carousel({images}) {
           className='button'
           onClick={ handleLeft }
         >
-          { '<' }
+          <img src={ triangle } alt="button rigth" />
         </button>
         <button
           className='button'
           onClick={ handleRigth }
         >
-          { '>' }
+          <img src={ triangle } alt="button rigth" />
         </button>
       </div>
       </div>
