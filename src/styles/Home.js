@@ -11,6 +11,13 @@ export const SectionBody = styled.section`
   height: 100vh;
   justify-content: center;
   width: 100vw;
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    justify-content: center;
+
+    background-image: linear-gradient(-90deg, #EAEAEA 80%, #2C2C2C 0%);
+  }
 `
 
 export const Informations = styled.div`
@@ -30,7 +37,10 @@ export const Informations = styled.div`
   }
 
   div {
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    align-items: center;
 
     p {
       color: ${ colorText };
@@ -42,16 +52,33 @@ export const Informations = styled.div`
       font-size: 15px;
       margin-bottom: 15%;
     }
+
+    #icons {
+      display: flex;
+      flex-direction: row;
+      width: 60%;
+    }
+  
+    .icons-img {
+      width: 80%;
+    }
   }
 
-  #icons {
-    display: flex;
-    justify-content: center;
-    width: 60%;
-  }
+  @media screen and (max-width: 600px) {
+    flex-direction: row;
+    height: 20vh;
+    width: 80vw;
 
-  .icons-img {
-    width: 80%;
+    img {
+      width: 38%;
+      margin: 3%;
+    }
+
+    div {
+      text-align: center;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 `;
 
@@ -64,7 +91,6 @@ export const Description = styled.div`
   margin: 3%;
   min-width: 150px;
   width: 35vw;
-
 
   #title {
     font-size: 60px;
@@ -83,5 +109,24 @@ export const Description = styled.div`
     padding: 3%;
     text-align: center;
     text-decoration: none;
+  }
+
+  @media screen and (max-width: 600px) {
+    justify-content: center;
+    text-align: right;
+    align-items: flex-end;
+
+    margin: 3% 0 0 20%;
+    min-width: 250px;
+    width: 40vw;
+    height: 60vh;
+
+    a {
+    font-size: 30px;
+    padding: 5%;
+    text-align: center;
+    text-decoration: none;
+    width: 57vw;
+  }
   }
 `
