@@ -21,10 +21,10 @@ export const Informations = styled.div`
   box-shadow: 5px 10px 7px rgb(0 , 1, 5, 0.5);
   display: flex;
   flex-direction: column;
-  height: 60%;
-  margin: 5% 1%;
+  height: 55%;
+  margin: 5% 1% 5% 5%;
   padding: 3%;
-  width: 15%;
+  width: 12%;
 
   img {
     border-radius: 50%;
@@ -36,7 +36,7 @@ export const Informations = styled.div`
 
     p {
       color: ${ colorText };
-      font-size: 30px;
+      font-size: 21px;
     }
 
     #sub-title {
@@ -48,11 +48,11 @@ export const Informations = styled.div`
   #icons {
     display: flex;
     flex-direction: row;
-    width: 50%;
+    width: 80%;
   }
-
+  
   #git {
-    width: 135%;
+    width: 100%;
   }
 `;
 
@@ -63,15 +63,17 @@ export const Description = styled.div`
   height: 60%;
   justify-content: space-between;
   padding: 3%;
-  width: 26%;
+  width: 23%;
 
   #title {
-    font-size: 80px;
-    margin: 0;
+    font-size: 60px;
+    margin: -5%;
+    margin-left: 0;
   }
-
+  
   p {
     font-size: 20px;
+    text-align: justify;
   }
 
   a {
