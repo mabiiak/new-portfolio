@@ -16,17 +16,17 @@ export const SectionBody = styled.section`
 export const Informations = styled.div`
   align-items: center;
   background-color: ${backgroundCards};
-  box-shadow: 5px 10px 7px rgb(0 , 1, 5, 0.5);
+  box-shadow: 3px 7px 10px rgb(0 , 1, 5, 0.5);
   display: flex;
   flex-direction: column;
-  height: 55%;
-  margin: 5% 1% 5% 5%;
-  padding: 3%;
-  width: 12%;
+  justify-content: center;
+  height: 70vh;
+  min-width: 120px;
+  width: 20vw;
 
   img {
     border-radius: 50%;
-    width: 100%;
+    width: 70%;
   }
 
   div {
@@ -34,7 +34,8 @@ export const Informations = styled.div`
 
     p {
       color: ${ colorText };
-      font-size: 21px;
+      font-size: 25px;
+      margin: 0;
     }
 
     #sub-title {
@@ -45,12 +46,16 @@ export const Informations = styled.div`
 
   #icons {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    width: 60%;
+  }
+
+  .icons-img {
     width: 80%;
   }
-  
-  #git {
-    width: 100%;
+
+  @media screen and (max-width: 1000px) {
+    justify-content: center;
   }
 `;
 
@@ -58,15 +63,16 @@ export const Description = styled.div`
   color: ${ colorText };
   display: flex;
   flex-direction: column;
-  height: 60%;
+  height: 70vh;
   justify-content: space-between;
-  padding: 3%;
-  width: 23%;
+  margin: 3%;
+  min-width: 150px;
+  width: 35vw;
+
 
   #title {
     font-size: 60px;
-    margin: -5%;
-    margin-left: 0;
+    margin: 5px 0;
   }
   
   p {
@@ -78,8 +84,7 @@ export const Description = styled.div`
     background-color: ${backgroundSide};
     color: white;
     font-size: 30px;
-    margin-top: 0.5%;
-    padding: 5%;
+    padding: 3%;
     text-align: center;
     text-decoration: none;
   }

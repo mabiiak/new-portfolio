@@ -14,12 +14,12 @@ function Home() {
           <p> Mabiane Polniak </p>
           <p id='sub-title'> Desenvolvedora Front-End </p>
         </div>
-        <div id="icons">
+        <div  id="icons">
           <a id='git' href='https://github.com/mabiiak' target="_blank" rel="noreferrer">
-            <img alt='icone do gitbub' src={iconGit} width="100px" />
+            <img alt='icone do gitbub' src={iconGit}  className="icons-img" />
           </a>
           <a href='https://www.linkedin.com/in/mabianepolniak/' target="_blank" rel="noreferrer">
-            <img alt='icone do linkedin' src={iconLinkedin} width="100px" />
+            <img alt='icone do linkedin' src={iconLinkedin}  className="icons-img" />
           </a>
         </div>
       </Informations>
