@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import {
-  background,
   backgroundSide,
   backgroundCards,
   colorText,
@@ -8,12 +7,11 @@ import {
 
 export const SectionBody = styled.section`
   align-items: center;
-  background-image: linear-gradient(-90deg, ${background} 65%, ${backgroundSide} 0%);
   display: flex;
   height: 100vh;
   justify-content: center;
   width: 100vw;
-  `
+`
 
 export const Informations = styled.div`
   align-items: center;
@@ -80,7 +78,7 @@ export const Description = styled.div`
     background-color: ${backgroundSide};
     color: white;
     font-size: 30px;
-    margin-top: 2%;
+    margin-top: 0.5%;
     padding: 5%;
     text-align: center;
     text-decoration: none;
