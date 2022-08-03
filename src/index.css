@@ -2,6 +2,7 @@
 
 body {
   margin: 0;
+  background-image: linear-gradient(-90deg, #EAEAEA 65%, #2C2C2C 0%)
 }
 
 * { 
