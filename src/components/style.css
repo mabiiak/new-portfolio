@@ -4,7 +4,7 @@
   overflow-y: hidden;
   position: relative;
   scroll-behavior: smooth;
-  width:400px;
+  width: 600px;
 }
 
 .carousel::-webkit-scrollbar {
@@ -13,12 +13,13 @@
 
 .item {
   flex: none;
-  height:224px;
-  width:400px;
+  height:400px;
+  width: 600px;
 }
 
 .item img {
   width: 100%;
+  position: absolute;
 }
 
 .button {
@@ -29,6 +30,8 @@
   height: 70px;
   margin: 5px 10px;
   width: 70px;
+  position: relative;
+  top: -260px;
 }
 
 .button img {
@@ -37,4 +40,11 @@
 
 .button:first-child {
   transform: rotate(180deg);
+  position: relative;
+  left: -20px;
+}
+
+.button:last-child {
+  position: relative;
+  left: 440px;
 }
