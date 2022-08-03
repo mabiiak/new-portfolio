@@ -48,3 +48,101 @@
   position: relative;
   left: 440px;
 }
+
+@media screen and (max-width: 1200px) {
+  .carousel {
+    width: 400px;
+  }
+
+  .item {
+    height:300px;
+    width: 400px;
+  }
+
+  .button {
+    top: -230px;
+  }
+  
+  .button:last-child {
+    position: relative;
+    left: 238px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  /* .carousel {
+    width: 300px;
+  }
+
+  .item {
+    height:200px;
+    width: 300px;
+  }
+
+  .button {
+    top: -160px;
+  }
+
+  .button img {
+    width: 80%;
+  }
+  
+  .button:last-child {
+    position: relative;
+    left: 145px;
+  } */
+}
+
+@media screen and (max-width: 600px) {
+  .carousel {
+    width: 100%;
+  }
+
+  .item {
+    height:300px;
+    width: 100%;
+  }
+
+  .button {
+    top: -190px;
+  }
+
+  .button img {
+    width: 80%;
+  }
+  
+  .button:last-child {
+    position: relative;
+    left: 70%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .button {
+    top: -230px;
+  }
+
+  .button img {
+    width: 70%;
+  }
+  
+  .button:last-child {
+    position: relative;
+    left: 59%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .button {
+    top: -260px;
+  }
+
+  .button img {
+    width: 50%;
+  }
+  
+  .button:last-child {
+    position: relative;
+    left: 45%;
+  }
+}

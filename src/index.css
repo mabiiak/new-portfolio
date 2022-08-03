@@ -22,3 +22,10 @@ body::-webkit-scrollbar-thumb {
 * { 
   font-family: 'Jomolhari', serif;
 }
+
+@media screen and (max-width: 600px) {
+  body {
+    background-image: none;
+    background-color: #A1A1A1;
+  }
+}
