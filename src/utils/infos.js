@@ -6,24 +6,22 @@ import TrybeTunesSearch from '../images/projects/trybetunes-search.png'
 
 const projects = [
   {
-    name: 'StarWars Search',
-    description: `Projeto feito durante o curso de desenvolvimento Web na Trybe, no módulo de Front-End. Utilizando React, Javascript e styled-components.
-    
-    Ele tinha como objetivo criar uma aplicação que pegue os dados de uma requisição API e filtre os planetas do universo Star Wars de acordo com a busca, podendo criar mais de um filtro ao mesmo tempo.
+    name: 'TrybeTunnes',
+    description: `Projeto feito utilizando React, Javascript e CSS.
 
-    Nele foi ultilizado React Hook com conext API para fazer o gerenciamento do estado, e styled-components para fazer a estilização.`,
-    images: [StarWarsPlanets],
+    Ele tinha como objetivo criar uma aplicação que busque musicas por artistas ou bandas, e seja capaz de reproduzir suas prévias e também armazenar as favoritas do usuario.`,
+    images: [TrybeTunesLogin, TrybeTunesSearch],
     links: {
-      repo: 'https://github.com/mabiiak/starwars-planets',
-      view: 'https://mabiiak.github.io/starwars-planets/' 
+      repo: 'https://github.com/mabiiak/trybetunes',
+      view: 'https://mabiiak.github.io/trybetunes/' 
     },
   },
-
+  
   {
     name: 'TrybeWallet',
-    description: `Projeto feito durante o curso de desenvolvimento Web na Trybe, no módulo de Front-End. Utilizando React, Javascript e CSS.Utilizando React, Javascript e CSS
+    description: `Projeto feito utilizando React Redux, Javascript e CSS.
 
-    Ele tinha como objetivo criar uma aplicação que seja capaz de armazenar e somar as despesas do usuario, levando em conta a moeda utilizada, a cotação da moeda no dia da compra. Utilizamos Redux para trabalhar com a passagem de states, e utilizado os dados de uma API com a cotação das moedas. Tentei também fazer uma maior "componentização" de elementos como inputs para reutilizar na barra de inserção.`,
+    Seu objetivo é armazenar compras, já calculando o valor de todas considerando a cotação da moeda utilizada.`,
     images: [TrybeWalletLogin, TrybeWalletHome],
     links: {
       repo: 'https://github.com/mabiiak/trybewallet',
@@ -32,16 +30,15 @@ const projects = [
   },
 
   {
-    name: 'TrybeTunes',
-    description: `Projeto feito durante o curso de desenvolvimento Web na Trybe, no módulo de Front-End. Utilizando React, Javascript e CSS.
-
-    Ele tinha como objetivo criar uma aplicação que busque musicas por artistas ou banda e seja capaz de armazenar as favoritas do usuario.
+    name: 'StarWars Planets Search',
+    description: `Projeto feito utilizando React Hooks, Javascript e styled-components.
     
-    Nele eu pude compreender melhor os ciclos de vida de um componente React, criar rotas, fazer requisições e consumir dados de uma API.`,
-    images: [TrybeTunesLogin, TrybeTunesSearch],
+    Tinha como objetivo consumir uma API com informações sobre o mundo de Star Wars. Permitindo filtrar planetas por nome, população entre outros.
+    `,
+    images: [StarWarsPlanets],
     links: {
-      repo: 'https://github.com/mabiiak/trybetunes',
-      view: 'https://mabiiak.github.io/trybetunes/' 
+      repo: 'https://github.com/mabiiak/starwars-planets',
+      view: 'https://mabiiak.github.io/starwars-planets/' 
     },
   },
 ];
