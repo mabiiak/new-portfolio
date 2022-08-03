@@ -124,7 +124,7 @@ export const Description = styled.div`
   @media screen and (max-width: 600px) {
     justify-content: center;
     align-items: flex-end;
-    margin: 5vh 0 0 15%;
+    margin: 5vh 0 0 20%;
     min-width: 250px;
     width: 45vw;
     height: 60vh;
