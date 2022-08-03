@@ -53,10 +53,6 @@ export const Informations = styled.div`
   .icons-img {
     width: 80%;
   }
-
-  @media screen and (max-width: 1000px) {
-    justify-content: center;
-  }
 `;
 
 export const Description = styled.div`

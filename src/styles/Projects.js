@@ -7,25 +7,40 @@ import {
 } from './Color';
 
 export const ProjectsSection = styled.section`
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
   #title {
     align-items: center;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 120px;
+    width: 60%;
   
     p {
-      font-size: 60px;
+      font-size: 4vw;
       color: ${colorText};
     }
 
     img {
-      width: 65%;
+      width: 5vw;
     }
   }
 
-  @media screen and (max-width: 600px) {
-    background-color: ${backgroundCards};
+  @media screen and (max-width: 500px) {
+    #title {
+    width: 60%;
+  
+    p {
+      font-size: 6vw;
+      color: ${colorText};
+    }
+
+    img {
+      width: 7vw;
+    }
+  }
   }
 `;
 
@@ -33,7 +48,9 @@ export const CardProject = styled.div`
   display: flex;
   width: 60%;
   height: 338px;
-  margin: 0 15% 3% 20%;
+  min-height: 338px;
+  min-width: 820px;
+  margin-bottom: 3%;
   background-color: ${backgroundCards};
 
   #about-project {
@@ -79,98 +96,44 @@ export const CardProject = styled.div`
     margin-bottom: 0;
   }
 
-  /* @media screen and (max-width: 800px) {
-    display: flex;
-    width: 90%;
-    height: 338px;
-    margin: 5%;
-    background-color: ${backgroundCards};
-
-    #about-project {
-      display: flex;
-      flex-direction: column;
-      align-items: left;
-      color: ${colorText};
-      margin: 0 3%;
-
-      #description {
-        overflow:auto;
-        height: 200px;
-        word-wrap: break-word;
-        width: 90%;
-      }
-
-      #buttons {
-        display: flex;
-        height: 20%;
-
-        a {
-          display: flex;
-          background-color: ${backgroundSide};
-          padding: 2%;
-          margin-right: 3%;
-          margin-bottom: 5%;
-          width: 50%;
-          justify-content: center;
-        }
-      }
-    }
-
-    #name-project {
-      font-size: 30px;
-      margin-top: 5%;
-      margin-bottom: 0;
-    }
-  } */
-
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 900px) {
+    min-width: 501px;
+    width: 50%;
     flex-direction: column;
-    justify-content: flex-start;
-    height: 600px;
-    margin: 5% 3%;
-    width: 95%;
-    background-color: ${background};
+    height: 570px;
+    margin-bottom: 5%;
     
     #about-project {
-      #buttons {
-        position: relative;
-        top: -90px;
-      }
-    }
+      height: 300px;
+      position: relative; 
+      top: -80px;
 
-    #name-project {
-      margin-top: -10%;
+      #name-project {
+        margin-top: 0;
+      }
+
+      #buttons {
+        height: 30%;
+      }
     }
   }
 
-  @media screen and (max-width: 500px) {
-    height: 590px;
-
+  @media screen and (max-width: 600px) {
+    min-width: 300px;
+    height: 540px;
+    
     #about-project {
-      #buttons {
-        position: relative;
-        top: -60px;
+      height: 375px;
+      position: relative; 
+      top: -80px;
+
+      #name-project {
+        margin-top: 0;
       }
-    }
 
-    #name-project {
-      margin-top: -20%;
-    }
-}
-
-@media screen and (max-width: 450px) {
-  height: 570px;
-
-    #about-project {
       #buttons {
-        position: relative;
-        top: -15vh;
+        height: 20%;
       }
-    }
-
-    #name-project {
-      position: relative;
-      top: -8vh;
     }
 }
 `;

@@ -13,7 +13,7 @@
 
 .item {
   flex: none;
-  height:400px;
+  height:340px;
   width: 600px;
 }
 
@@ -31,7 +31,7 @@
   margin: 5px 10px;
   width: 70px;
   position: relative;
-  top: -260px;
+  top: -210px;
 }
 
 .button img {
@@ -49,38 +49,18 @@
   left: 440px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 900px) {
   .carousel {
-    width: 400px;
+    width: 500px;
   }
 
   .item {
-    height:300px;
-    width: 400px;
+    height:270px;
+    width: 500px;
   }
 
   .button {
-    top: -230px;
-  }
-  
-  .button:last-child {
-    position: relative;
-    left: 238px;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  /* .carousel {
-    width: 300px;
-  }
-
-  .item {
-    height:200px;
-    width: 300px;
-  }
-
-  .button {
-    top: -160px;
+    top: -170px;
   }
 
   .button img {
@@ -89,22 +69,22 @@
   
   .button:last-child {
     position: relative;
-    left: 145px;
-  } */
+    left: 68%;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .carousel {
-    width: 100%;
+    width: 300px;
   }
 
   .item {
-    height:300px;
-    width: 100%;
+    height:175px;
+    width: 300px;
   }
 
   .button {
-    top: -190px;
+    top: -135px;
   }
 
   .button img {
@@ -113,36 +93,6 @@
   
   .button:last-child {
     position: relative;
-    left: 70%;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .button {
-    top: -230px;
-  }
-
-  .button img {
-    width: 70%;
-  }
-  
-  .button:last-child {
-    position: relative;
-    left: 59%;
-  }
-}
-
-@media screen and (max-width: 300px) {
-  .button {
-    top: -260px;
-  }
-
-  .button img {
-    width: 50%;
-  }
-  
-  .button:last-child {
-    position: relative;
-    left: 45%;
+    left: 48%;
   }
 }
