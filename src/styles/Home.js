@@ -13,17 +13,14 @@ export const SectionBody = styled.section`
   width: 100vw;
 
   @media screen and (max-width: 600px) {
-    flex-direction: column;
-    justify-content: center;
-
     background-image: linear-gradient(-90deg, #EAEAEA 80%, #2C2C2C 0%);
+    flex-direction: column;
   }
 `
 
 export const Informations = styled.div`
   align-items: center;
   background-color: ${backgroundCards};
-  box-shadow: 3px 7px 10px rgb(0 , 1, 5, 0.5);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -66,8 +63,8 @@ export const Informations = styled.div`
 
   @media screen and (max-width: 600px) {
     flex-direction: row;
-    height: 20vh;
-    width: 80vw;
+    height: 25vh;
+    width: 90vw;
 
     img {
       width: 38%;
@@ -75,9 +72,22 @@ export const Informations = styled.div`
     }
 
     div {
-      text-align: center;
       flex-direction: column;
-      align-items: center;
+
+      p {
+        font-size: 20px;
+      }
+
+      #sub-title {
+        font-size: 12px;
+        margin-bottom: 5%;
+      }
+
+      #icons {
+        display: flex;
+        flex-direction: row;
+        width: 45%;
+      }
     }
   }
 `;
@@ -113,20 +123,29 @@ export const Description = styled.div`
 
   @media screen and (max-width: 600px) {
     justify-content: center;
-    text-align: right;
     align-items: flex-end;
-
-    margin: 3% 0 0 20%;
+    margin: 5vh 0 0 15%;
     min-width: 250px;
-    width: 40vw;
+    width: 45vw;
     height: 60vh;
 
-    a {
-    font-size: 30px;
-    padding: 5%;
-    text-align: center;
-    text-decoration: none;
-    width: 57vw;
+    #title {
+    font-size: 38px;
+    margin: 0;
   }
+
+    p {
+      text-align: justify;
+      width: 70vw;
+      font-size: 18px;
+    }
+
+    a {
+      font-size: 30px;
+      padding: 5%;
+      text-align: center;
+      text-decoration: none;
+      width: 60vw;
+    }
   }
 `
