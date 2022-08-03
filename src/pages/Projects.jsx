@@ -24,10 +24,10 @@ function Projects() {
               <p id='name-project'>{ project.name }</p>
               <p id='description'>{ project.description }</p>
               <div id='buttons'>
-                <a href={ project.links.repo } rel='noreferrer'>
+                <a href={ project.links.repo } target="_blank" rel='noreferrer'>
                   <img src={ repo } alt='icon for repository in github' />
                 </a>
-                <a href={ project.links.view } rel='noreferrer'>
+                <a href={ project.links.view } target="_blank" rel='noreferrer'>
                   <img src={ iconGitgub } alt='' />
                 </a>
               </div>
