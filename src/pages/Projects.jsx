@@ -3,34 +3,40 @@ import { Link } from 'react-router-dom';
 import projects from '../utils/infos';
 import repo from '../images/search-white.png';
 import iconGitgub from '../images/icons-github-white.png';
-import home from '../images/home.png';
+import home from '../images/home-white.png';
 import Carousel from '../components/Carousel';
+import { ProjectsSection, CardProject } from '../styles/Projects';
 
 function Projects() {
   return (
-    <section>
-      <h1>Projetos</h1>
+    <ProjectsSection>
+      <div id='title'>
+        <Link to='/home'>
+          <img src={ home } alt='icon home' />
+        </Link>
+        <p>Projetos</p>
+      </div>
       {
         projects.map((project) => (
-          <div>
+          <CardProject>
             <Carousel images={ project.images } />
-            <h2>{ project.name }</h2>
-            <p>{ project.description }</p>
-            <div>
-              <a href={ project.links.repo } rel='noreferrer'>
-                <img src={ repo } alt='icon for repository in github' />
-              </a>
-              <a href={ project.links.view } rel='noreferrer'>
-                <img src={ iconGitgub } alt='' />
-              </a>
+            <div id='about-project'>
+              <p id='name-project'>{ project.name }</p>
+              <p id='description'>{ project.description }</p>
+              <div id='buttons'>
+                <a href={ project.links.repo } target="_blank" rel='noreferrer'>
+                  <img src={ iconGitgub } alt='icon for repository in github' />
+                </a>
+                <a href={ project.links.view } target="_blank" rel='noreferrer'>
+                  <img src={ repo } alt='' />
+                </a>
+              </div>
             </div>
-          </div>
+          </CardProject>
         ))
       }
-      <Link to='/home'>
-        <img src={ home } alt='icon home' />
-      </Link>
-    </section>
+     
+    </ProjectsSection>
   )
 }
 

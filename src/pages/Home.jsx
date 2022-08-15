@@ -4,13 +4,13 @@ import { SectionBody, Informations, Description } from '../styles/Home';
 import picture from '../images/mabi-picture.jpeg';
 import iconGit from '../images/icons-github.png';
 import iconLinkedin from '../images/icons-linkedin.png';
-import js from '../images/stacks/icon-javascript.png'
-import py from '../images/stacks/icon-python.png'
-import sql from '../images/stacks/icon-sql.png'
-import css from '../images/stacks/icons-css.png'
-import nd from '../images/stacks/icons-node.png'
-import rct from '../images/stacks/icons-react.png'
-import tp from '../images/stacks/icons-typescript.png'
+// import js from '../images/stacks/icon-javascript.png'
+// import py from '../images/stacks/icon-python.png'
+// import sql from '../images/stacks/icon-sql.png'
+// import css from '../images/stacks/icons-css.png'
+// import nd from '../images/stacks/icons-node.png'
+// import rct from '../images/stacks/icons-react.png'
+// import tp from '../images/stacks/icons-typescript.png'
 
 function Home() {
   return (
