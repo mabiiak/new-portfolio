@@ -24,7 +24,7 @@ export const Informations = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 70vh;
+  height: 80vh;
   min-width: 120px;
   width: 20vw;
 
