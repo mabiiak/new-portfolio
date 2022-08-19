@@ -10,6 +10,7 @@ export const ProjectsSection = styled.section`
   align-items: center;
   display: flex;
   flex-direction: column;
+  background-image: linear-gradient(-90deg, rgb(0, 0, 0, 0) 72vw, #2C2C2C 0%);
 
   #title {
     align-items: center;
