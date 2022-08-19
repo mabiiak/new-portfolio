@@ -1,25 +1,25 @@
 import React from 'react';
-import { Informations } from '../styles/Home';
+import { Link } from 'react-router-dom';
+import { Informations } from '../styles/Contact';
 import picture from '../images/mabi-picture.jpeg';
-import iconGit from '../images/icons-github.png';
-import iconLinkedin from '../images/icons-linkedin.png';
+import git from '../images/i-github-white.png';
+import lin from '../images/i-linkedin.png';
 
 function Contact() {
   return (
     <Informations>
       <img alt='Foto de Mabiane' src={picture} />
-      <div>
-        <p> Mabiane Polniak </p>
+        <p id='name'> Mabiane Polniak </p>
         <p id='sub-title'> Desenvolvedora Full-Stack </p>
         <div id="icons">
-          <a id='git' href='https://github.com/mabiiak' target="_blank" rel="noreferrer">
-            <img alt='icone do gitbub' src={iconGit}  className="icons-img" />
-          </a>
           <a href='https://www.linkedin.com/in/mabianepolniak/' target="_blank" rel="noreferrer">
-            <img alt='icone do linkedin' src={iconLinkedin}  className="icons-img" />
+            <img alt='icone do linkedin' src={lin}  className="icons-img" />
+          </a>
+          <a id='git' href='https://github.com/mabiiak' target="_blank" rel="noreferrer">
+            <img alt='icone do gitbub' src={git}  className="icons-img" />
           </a>
         </div>
-      </div>
+      <Link id='button' to='/projects'>Projetos</Link>
     </Informations>
   )
 }
