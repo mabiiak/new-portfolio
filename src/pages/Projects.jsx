@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import projects from '../utils/infos';
+import projects from '../utils/infosProjects';
 import repo from '../images/search-white.png';
 import iconGitgub from '../images/icons-github-white.png';
 import home from '../images/home-white.png';
