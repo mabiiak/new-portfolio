@@ -9,7 +9,7 @@ function Skills() {
       <div id='content'>
         {
           stacks.map((stack) => (
-            <div key={ stack.name }>
+            <div id='item' key={ stack.name }>
               <img alt={ stack.name } src={ stack.image} />
               <p>{ stack.name }</p>
             </div>

@@ -5,21 +5,17 @@ import {
 } from './Color';
 
 export const SectionBody = styled.section`
-  align-items: center;
   display: flex;
   height: 100vh;
-  overflow-x: hidden;
-  width: 100vw;
+  width: 99vw;
 `
 export const Description = styled.div`
   color: ${ colorText };
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 45vw;
   position: relative;
-  left: 40vw;
-  top: 7vh;
+  margin: 14vh 20vw 10vh 45vw;
 
   #title {
     font-size: 60px;
@@ -34,13 +30,12 @@ export const Description = styled.div`
 export const SkillsStyle = styled.div`
   display: flex;
   flex-direction: column;
-  width: 45vw;
+  margin: auto 20vw auto 45vw;
   position: relative;
-  left: 40vw;
   
   #title {
     color: ${backgroundSide};
-    font-size: 60px;
+    font-size: 55px;
     margin: 5px 0;
   }
   
@@ -48,17 +43,23 @@ export const SkillsStyle = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: left;
 
-    img {
-      width: 120px;
-    }
+    #item {
+      margin: 2%;
+      margin-left: 0;
+      width: 30%;
 
-    p {
-      color: ${backgroundSide};
-      font-size: 22px;
-      text-align: center;
-      text-transform: capitalize;
+      img {
+        width: 100%;
+      }
+  
+      p {
+        color: ${backgroundSide};
+        font-size: 22px;
+        text-align: center;
+        text-transform: capitalize;
+      }
     }
   }
 

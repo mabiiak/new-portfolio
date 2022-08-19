@@ -13,7 +13,7 @@ export const Informations = styled.div`
   justify-content: center;
   height: 100vh;
   width: 27vw;
-  position: absolute;
+  position: fixed;
 
   img {
     border-radius: 50%;
