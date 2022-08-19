@@ -8,8 +8,10 @@ function Home() {
   return (
     <SectionBody>
       <Contact />
-      <About />
-      <Skills />
+      <div>
+        <About />
+        <Skills />
+      </div>
     </SectionBody>
   );
 }
