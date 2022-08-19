@@ -11,13 +11,9 @@ Esse projeto não está finalizado ⚠️.
 
 ### Implementações Futuras
   
-* Alteração no layout
+* Alteração no layout mobile
 
 <img src="assets/layout.png" width="650px" align="center"/>
-
-* Adicão das tecnologias que eu utilizo
-
-<img src="assets/skills.png" width="650px" align="center"/>
 
 * Adição de  projetos de Back-End
 
