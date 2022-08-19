@@ -19,4 +19,7 @@ Como Desenvolvedora decidi criar esse portfóli para poder mostrar alguns de meu
 
 * Adição de  projetos de Back-End
 
+### Referencias
+[Icones](https://icons8.com.br/icons/set/javascript)
+
 #### É um projeto simples, mas espero que você tenha gostado, sugestões são bem vindas!
