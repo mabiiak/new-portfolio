@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import './style.css';
+import './carouselStyle.css';
 import triangle from '../images/triangle.png';
 
 function Carousel({images}) {
