@@ -9,6 +9,7 @@ function Home() {
     <SectionBody>
       <Contact />
       <About />
+      <Skills />
     </SectionBody>
   );
 }
