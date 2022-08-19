@@ -96,9 +96,8 @@ export const Description = styled.div`
   color: ${ colorText };
   display: flex;
   flex-direction: column;
-  height: 70vh;
   justify-content: space-between;
-  margin: 3%;
+  margin: 70% auto 5% 3%;
   min-width: 150px;
   width: 35vw;
 
@@ -148,4 +147,36 @@ export const Description = styled.div`
       width: 60vw;
     }
   }
+`
+export const SkillsStyle = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: 10% auto 5% 3%;
+  min-width: 150px;
+  width: 35vw;
+  
+  #title {
+    color: ${backgroundSide};
+    font-size: 60px;
+    margin: 5px 0;
+  }
+  
+  #content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    img {
+      width: 120px;
+    }
+
+    p {
+      color: ${backgroundSide};
+      font-size: 22px;
+      text-align: center;
+      text-transform: capitalize;
+    }
+  }
+
 `

@@ -1,20 +1,22 @@
 import React from 'react';
-import { Description } from '../styles/Home';
+import { SkillsStyle } from '../styles/Home';
 import stacks from '../utils/infosStacks';
 
 function Skills() {
   return (
-    <Description>
+    <SkillsStyle>
       <p id='title'>Habilidades</p>
-      {
-        stacks.map((stack) => (
-          <div key={ stack.name }>
-            <img alt={ stack.name } src={ stack.image} />
-            <p>{ stack.name }</p>
-          </div>
-        ))
-      }
-    </Description>
+      <div id='content'>
+        {
+          stacks.map((stack) => (
+            <div key={ stack.name }>
+              <img alt={ stack.name } src={ stack.image} />
+              <p>{ stack.name }</p>
+            </div>
+          ))
+        }
+      </div>
+    </SkillsStyle>
   )
 }
 
