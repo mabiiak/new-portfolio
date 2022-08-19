@@ -1,6 +1,8 @@
 # Bem Vindo ao meu Portfólio!
 
-Como Desenvolvedora decidi criar esse portfóli para poder mostrar alguns de meus projetos, tecnologias que utilizo e também falar um pouco sobre minhas experiencias.
+Como Desenvolvedora decidi criar esse portfólio para poder mostrar alguns de meus projetos, tecnologias que utilizo e também falar um pouco sobre minhas experiencias.
+
+Esse projeto não está finalizado ⚠️.
 
 ### Tecnologias Utilizadas
 * JavaScript
