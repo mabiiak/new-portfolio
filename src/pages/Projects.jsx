@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import projects from '../utils/infosProjects';
-import repo from '../images/search-white.png';
-import iconGitgub from '../images/icons-github-white.png';
-import home from '../images/home-white.png';
+import view from '../images/i-view.png';
+import git from '../images/i-github.png';
+import home from '../images/i-home-white.png';
 import Carousel from '../components/Carousel';
 import { ProjectsSection, CardProject } from '../styles/Projects';
 
@@ -25,10 +25,10 @@ function Projects() {
               <p id='description'>{ project.description }</p>
               <div id='buttons'>
                 <a href={ project.links.repo } target="_blank" rel='noreferrer'>
-                  <img src={ iconGitgub } alt='icon for repository in github' />
+                  <img src={ git } alt='icon for repository in github' />
                 </a>
                 <a href={ project.links.view } target="_blank" rel='noreferrer'>
-                  <img src={ repo } alt='' />
+                  <img src={ view } alt='' />
                 </a>
               </div>
             </div>
