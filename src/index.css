@@ -4,7 +4,6 @@ body {
   margin: 0;
   background-color: #EAEAEA;
   background: url("./images/textura-gesso.jpg") repeat right, linear-gradient(-90deg, #EAEAEA 70%, #2C2C2C 0%);
-  /* background-size: contain; */
 }
 
 body::-webkit-scrollbar {
