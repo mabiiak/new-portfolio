@@ -86,8 +86,6 @@ export const CardProject = styled.div`
     }
   }
 
-  
-
   @media screen and (max-width: 850px) {
     min-width: 290px;
     height: 55%;
