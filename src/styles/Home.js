@@ -8,6 +8,10 @@ export const SectionBody = styled.section`
   display: flex;
   height: 100vh;
   width: 99vw;
+
+  @media screen and (max-width: 850px) {
+    flex-direction: column;
+  }
 `
 export const Description = styled.div`
   color: ${ colorText };
@@ -25,6 +29,15 @@ export const Description = styled.div`
   p {
     font-size: 20px;
     text-align: justify;
+  }
+
+  @media screen and (max-width: 650px) {
+    flex-direction: column;
+    margin: 8vh 15vw;
+
+    p {
+      text-align: left;
+    }
   }
 `
 export const SkillsStyle = styled.div`
@@ -63,4 +76,23 @@ export const SkillsStyle = styled.div`
     }
   }
 
+  @media screen and (max-width: 650px) {
+    flex-direction: column;
+    margin: 5vh 15vw;
+
+    #title {
+      color: ${backgroundSide};
+      font-size: 35px;
+      margin: 8px 0;
+    }
+    #content {
+      justify-content: space-between;
+
+      #item {
+        margin: 2%;
+        margin-left: 0;
+        width: 40%;
+      }
+    }
+  }
 `
