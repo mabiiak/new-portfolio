@@ -10,11 +10,8 @@ function About() {
         Atualmente estudo Desenvolvimento Web na Trybe, onde eu tive meu primeiro contato com tecnologia e pude aplicar meus conhecimentos em projetos práticos.
         <br />
         <br />
-<<<<<<< HEAD
         Antes de me encontrar como desenvolvedora, trabalhei com vendas em um call center, telefonista em uma agência bancária, e também como vendedora em uma loja de enxovais, e com isso pude melhorar minha comunicação e descobrir a satisfação de ajudar alguém com meu trabalho.
-=======
-        Antes de me encontrar como desenvolvedora, trabalhei com vendas em um call center, telefonista em uma agencia bancaria, e também como vendedora em uma loja de enxovais, e com isso pude melhorar minha comunicação e descobrir a satisfação de ajudar alguém com meu trabalho.
->>>>>>> 70a5422a9af0dd8ce57c4cfc2432014979fefd09
+
       </p>
     </Description>
   )
