@@ -5,7 +5,7 @@ import stacks from '../utils/infosStacks';
 function Skills() {
   return (
     <SkillsStyle>
-      <p id='title'>Habilidades</p>
+      <p id='title'>Linguagens</p>
       <div id='content'>
         {
           stacks.map((stack) => (
