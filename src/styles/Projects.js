@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import {
   background,
-  backgroundSide,
   backgroundCards,
+  backgroundSide,
   colorText,
 } from './Color';
 
@@ -10,37 +10,26 @@ export const ProjectsSection = styled.section`
   align-items: center;
   display: flex;
   flex-direction: column;
+  background-image: linear-gradient(180deg, #2C2C2C 40vh, rgb(0, 0, 0, 0) 0);
+  background-repeat: repeat;
+  width: 100vw;
 
   #title {
     align-items: center;
     display: flex;
-    justify-content: space-between;
-    height: 120px;
-    width: 60%;
+    justify-content: space-around;
+    height: 15vh;
+    width: 100vw;
+    background-color: ${backgroundSide};
   
     p {
-      font-size: 4vw;
-      color: ${colorText};
+      font-size: 5vw;
+      color: ${background};
     }
 
     img {
       width: 5vw;
     }
-  }
-
-  @media screen and (max-width: 500px) {
-    #title {
-    width: 60%;
-  
-    p {
-      font-size: 6vw;
-      color: ${colorText};
-    }
-
-    img {
-      width: 7vw;
-    }
-  }
   }
 `;
 
@@ -51,7 +40,7 @@ export const CardProject = styled.div`
   min-height: 338px;
   min-width: 820px;
   margin-bottom: 3%;
-  background-color: ${backgroundCards};
+  background-color: ${background};
 
   #about-project {
     display: flex;
@@ -59,10 +48,16 @@ export const CardProject = styled.div`
     align-items: left;
     color: ${colorText};
     margin: 0 3%;
+    justify-content: space-around;
 
+    #name-project {
+      font-size: 30px;
+      margin-top: 5%;
+      margin-bottom: 0;
+    }
+  
     #description {
       overflow:auto;
-      height: 200px;
       word-wrap: break-word;
     }
 
@@ -71,69 +66,48 @@ export const CardProject = styled.div`
     }
     
     #description::-webkit-scrollbar-thumb {
-      background-color: ${background};
+      background-color: ${backgroundCards};
     }
 
     #buttons {
       display: flex;
       height: 20%;
-
+      width: 100%;
+      justify-content: space-between;
+      
       a {
+        margin: 1%;
         display: flex;
-        background-color: ${backgroundSide};
+        background-color: ${backgroundCards};
         padding: 2%;
-        margin-right: 3%;
-        margin-bottom: 5%;
         width: 50%;
         justify-content: center;
       }
     }
   }
 
-  #name-project {
-    font-size: 30px;
-    margin-top: 5%;
-    margin-bottom: 0;
-  }
-
-  @media screen and (max-width: 900px) {
-    min-width: 501px;
-    width: 50%;
+  @media screen and (max-width: 850px) {
+    min-width: 290px;
+    height: 55%;
     flex-direction: column;
-    height: 570px;
-    margin-bottom: 5%;
+    width: 80vw;
+    margin-bottom: 15%;
     
     #about-project {
-      height: 300px;
-      position: relative; 
-      top: -80px;
+      position: relative;
+      top: -5vh;
+      justify-content: space-around;
 
-      #name-project {
-        margin-top: 0;
+      #description {
+        font-size: 140%;
       }
 
       #buttons {
-        height: 30%;
+        margin-top: 5%;
+        a {
+          width: 45%;
+        }
       }
     }
   }
-
-  @media screen and (max-width: 600px) {
-    min-width: 300px;
-    height: 540px;
-    
-    #about-project {
-      height: 375px;
-      position: relative; 
-      top: -80px;
-
-      #name-project {
-        margin-top: 0;
-      }
-
-      #buttons {
-        height: 20%;
-      }
-    }
-}
 `;

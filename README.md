@@ -2,24 +2,10 @@
 
 Como Desenvolvedora decidi criar esse portfólio para poder mostrar alguns de meus projetos, tecnologias que utilizo e também falar um pouco sobre minhas experiencias.
 
-Esse projeto não está finalizado ⚠️.
-
 ### Tecnologias Utilizadas
 * JavaScript
 * React
 * CSS/Styled-Components
-
-### Implementações Futuras
-  
-* Alteração no layout
-
-<img src="assets/layout.png" width="650px" align="center"/>
-
-* Adicão das tecnologias que eu utilizo
-
-<img src="assets/skills.png" width="650px" align="center"/>
-
-* Adição de  projetos de Back-End
 
 ### Referencias
 [Icones](https://icons8.com.br/icons/set/javascript)

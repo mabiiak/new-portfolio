@@ -1,106 +1,25 @@
 import styled from 'styled-components';
 import {
   backgroundSide,
-  backgroundCards,
   colorText,
 } from './Color';
 
 export const SectionBody = styled.section`
-  align-items: center;
   display: flex;
   height: 100vh;
-  justify-content: center;
-  width: 100vw;
+  width: 99vw;
 
-  @media screen and (max-width: 600px) {
-    background-image: linear-gradient(-90deg, #EAEAEA 80%, #2C2C2C 0%);
+  @media screen and (max-width: 850px) {
     flex-direction: column;
   }
 `
-
-export const Informations = styled.div`
-  align-items: center;
-  background-color: ${backgroundCards};
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 80vh;
-  min-width: 120px;
-  width: 20vw;
-
-  img {
-    border-radius: 50%;
-    width: 70%;
-  }
-
-  div {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-
-    p {
-      color: ${ colorText };
-      font-size: 25px;
-      margin: 0;
-    }
-
-    #sub-title {
-      font-size: 15px;
-      margin-bottom: 15%;
-    }
-
-    #icons {
-      display: flex;
-      flex-direction: row;
-      width: 60%;
-    }
-  
-    .icons-img {
-      width: 80%;
-    }
-  }
-
-  @media screen and (max-width: 600px) {
-    flex-direction: row;
-    height: 25vh;
-    width: 90vw;
-
-    img {
-      width: 38%;
-      margin: 3%;
-    }
-
-    div {
-      flex-direction: column;
-
-      p {
-        font-size: 20px;
-      }
-
-      #sub-title {
-        font-size: 12px;
-        margin-bottom: 5%;
-      }
-
-      #icons {
-        display: flex;
-        flex-direction: row;
-        width: 45%;
-      }
-    }
-  }
-`;
-
 export const Description = styled.div`
   color: ${ colorText };
   display: flex;
   flex-direction: column;
-  height: 70vh;
   justify-content: space-between;
-  margin: 3%;
-  min-width: 150px;
-  width: 35vw;
+  position: relative;
+  margin: 14vh 20vw 10vh 45vw;
 
   #title {
     font-size: 60px;
@@ -112,40 +31,68 @@ export const Description = styled.div`
     text-align: justify;
   }
 
-  a {
-    background-color: ${backgroundSide};
-    color: white;
-    font-size: 30px;
-    padding: 3%;
-    text-align: center;
-    text-decoration: none;
-  }
-
-  @media screen and (max-width: 600px) {
-    justify-content: center;
-    align-items: flex-end;
-    margin: 5vh 0 0 20%;
-    min-width: 250px;
-    width: 45vw;
-    height: 60vh;
-
-    #title {
-    font-size: 38px;
-    margin: 0;
-  }
+  @media screen and (max-width: 650px) {
+    flex-direction: column;
+    margin: 8vh 15vw;
 
     p {
-      text-align: justify;
-      width: 70vw;
-      font-size: 18px;
+      text-align: left;
     }
+  }
+`
+export const SkillsStyle = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: auto 20vw auto 45vw;
+  position: relative;
+  
+  #title {
+    color: ${backgroundSide};
+    font-size: 55px;
+    margin: 5px 0;
+  }
+  
+  #content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
 
-    a {
-      font-size: 30px;
-      padding: 5%;
-      text-align: center;
-      text-decoration: none;
-      width: 60vw;
+    #item {
+      margin: 2%;
+      margin-left: 0;
+      width: 30%;
+
+      img {
+        width: 100%;
+      }
+  
+      p {
+        color: ${backgroundSide};
+        font-size: 22px;
+        text-align: center;
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    flex-direction: column;
+    margin: 5vh 15vw;
+
+    #title {
+      color: ${backgroundSide};
+      font-size: 35px;
+      margin: 8px 0;
+    }
+    #content {
+      justify-content: space-between;
+
+      #item {
+        margin: 2%;
+        margin-left: 0;
+        width: 40%;
+      }
     }
   }
 `
