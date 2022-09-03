@@ -7,11 +7,13 @@ import TrybeTunesLogin from '../images/projects/trybetunes-login.png'
 import TrybeTunesSearch from '../images/projects/trybetunes-search.png';
 import TrybeTunesSearchNon from '../images/projects/trybetunes-search-non.png';
 import TrybeTunesFavorites from '../images/projects/trybetunes-favorites.png';
+import SistemaSolar from '../images/projects/sistema-solar.png';
+import SistemaSolarMissoes from '../images/projects/sistema-solar-missoes.png';
 
 const projects = [
   {
     name: 'TrybeTunnes',
-    description: `Projeto feito utilizando React, Javascript e CSS.
+    description: `Feito utilizando React, Javascript e CSS.
 
     Ele tinha como objetivo criar uma aplicação que busque musicas por artistas ou bandas, e seja capaz de reproduzir suas prévias e também armazenar as favoritas do usuario.`,
     images: [
@@ -28,7 +30,7 @@ const projects = [
   
   {
     name: 'TrybeWallet',
-    description: `Projeto feito utilizando React Redux, Javascript e CSS.
+    description: `Feito utilizando React Redux, Javascript e CSS.
 
     Seu objetivo é armazenar compras, já calculando o valor de todas considerando a cotação da moeda utilizada.`,
     images: [
@@ -41,10 +43,21 @@ const projects = [
       view: 'https://mabiiak.github.io/trybewallet/' 
     },
   },
-
+  {
+    name: 'Sistema Solar',
+    description: `Feito utilizando React, Javascript e CSS.
+    
+    Tinha como objetivo consumir uma API com informações sobre o sistema solar.
+    `,
+    images: [SistemaSolar, SistemaSolarMissoes],
+    links: {
+      repo: 'https://github.com/mabiiak/sistema-solar',
+      view: 'https://sistema-solar-mabiiak.vercel.app/' 
+    },
+  },
   {
     name: 'StarWars Planets Search',
-    description: `Projeto feito utilizando React Hooks, Javascript e styled-components.
+    description: `Feito utilizando React Hooks, Javascript e styled-components.
     
     Tinha como objetivo consumir uma API com informações sobre o mundo de Star Wars. Permitindo filtrar planetas por nome, população entre outros.
     `,
