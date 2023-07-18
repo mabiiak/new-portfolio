@@ -35,7 +35,12 @@ export const Description = styled.div`
     flex-direction: column;
     margin: 8vh 15vw;
 
+    #title {
+      font-size: 2rem;
+    }
+
     p {
+      font-size: 0.9rem;
       text-align: left;
     }
   }
@@ -82,20 +87,20 @@ export const SkillsStyle = styled.div`
 
   @media screen and (max-width: 650px) {
     flex-direction: column;
-    margin: 5vh 15vw;
+    margin: 2vh 15vw;
 
     #title {
       color: ${backgroundSide};
-      font-size: 35px;
+      font-size: 2rem;
       margin: 8px 0;
     }
     #content {
-      justify-content: space-between;
+      justify-content: left;
 
       #item {
         margin: 2%;
         margin-left: 0;
-        width: 40%;
+        width: 25%;
       }
     }
   }

@@ -1,33 +1,10 @@
-import StarWarsPlanets from '../images/projects/starwars-planets.png';
-import StarWarsPlanetsFilters from '../images/projects/starwars-planets-filters.png';
 import TrybeWalletHomeInitial from '../images/projects/trybewallet-wallet-initial.png';
 import TrybeWalletHome from '../images/projects/trybewallet-wallet.png';
 import TrybeWalletLogin from '../images/projects/trybewallet-login.png';
-import TrybeTunesLogin from '../images/projects/trybetunes-login.png'
-import TrybeTunesSearch from '../images/projects/trybetunes-search.png';
-import TrybeTunesSearchNon from '../images/projects/trybetunes-search-non.png';
-import TrybeTunesFavorites from '../images/projects/trybetunes-favorites.png';
 import SistemaSolar from '../images/projects/sistema-solar.png';
 import SistemaSolarMissoes from '../images/projects/sistema-solar-missoes.png';
 
 const projects = [
-  {
-    name: 'TrybeTunnes',
-    description: `Feito utilizando React, Javascript e CSS.
-
-    Ele tinha como objetivo criar uma aplicação que busque musicas por artistas ou bandas, e seja capaz de reproduzir suas prévias e também armazenar as favoritas do usuario.`,
-    images: [
-      TrybeTunesLogin,
-      TrybeTunesSearch,
-      TrybeTunesSearchNon,
-      TrybeTunesFavorites
-    ],
-    links: {
-      repo: 'https://github.com/mabiiak/trybetunes',
-      view: 'https://mabiiak.github.io/trybetunes/' 
-    },
-  },
-  
   {
     name: 'TrybeWallet',
     description: `Feito utilizando React Redux, Javascript e CSS.
@@ -53,18 +30,6 @@ const projects = [
     links: {
       repo: 'https://github.com/mabiiak/sistema-solar',
       view: 'https://sistema-solar-mabiiak.vercel.app/' 
-    },
-  },
-  {
-    name: 'StarWars Planets Search',
-    description: `Feito utilizando React Hooks, Javascript e styled-components.
-    
-    Tinha como objetivo consumir uma API com informações sobre o mundo de Star Wars. Permitindo filtrar planetas por nome, população entre outros.
-    `,
-    images: [StarWarsPlanets, StarWarsPlanetsFilters],
-    links: {
-      repo: 'https://github.com/mabiiak/starwars-planets',
-      view: 'https://mabiiak.github.io/starwars-planets/' 
     },
   },
 ];

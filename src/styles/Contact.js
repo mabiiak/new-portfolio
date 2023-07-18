@@ -73,39 +73,38 @@ export const Informations = styled.div`
     justify-content: center;
     min-width: 100%;
     padding-top: 5vh;
-    position: static;
+    position: relative;
     width: 105%;
     
     img {
       margin-top: 10vh;
-      width: 40%;
+      width: 30%;
     }
 
     #name {
-      font-size: 6vw;
+      font-size: 1.2rem;
       margin: 2vh auto 0vh auto;
     }
 
     #sub-title {
-      font-size: 4vw;
+      font-size: 0.8rem;
       width: 30%;
       text-align: center;
     }
 
-    #icons {
+    #icons > a {
+      display: flex;
       align-items: center;
+      justify-content: center;
     }
 
     .icons-img {
       margin: 0;
       width: 50%;
-      margin-left: 5vw;
     }
 
     #button {
-      height: 60px;
-      width: 100%;
-      font-size: 250%;
+      width: 70%;
       position: -webkit-sticky;
       position: sticky;
     }

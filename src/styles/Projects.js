@@ -23,12 +23,12 @@ export const ProjectsSection = styled.section`
     background-color: ${backgroundSide};
   
     p {
-      font-size: 5vw;
+      font-size: 2rem;
       color: ${background};
     }
 
     img {
-      width: 5vw;
+      width: 2rem;
     }
   }
 `;
@@ -51,13 +51,14 @@ export const CardProject = styled.div`
     justify-content: space-around;
 
     #name-project {
-      font-size: 30px;
+      font-size: 1.5rem;
       margin-top: 5%;
       margin-bottom: 0;
     }
   
     #description {
-      overflow:auto;
+      overflow: auto;
+      font-size: 0.8rem;
       word-wrap: break-word;
     }
 
@@ -71,7 +72,7 @@ export const CardProject = styled.div`
 
     #buttons {
       display: flex;
-      height: 20%;
+      height: 15%;
       width: 100%;
       justify-content: space-between;
       
@@ -80,7 +81,7 @@ export const CardProject = styled.div`
         display: flex;
         background-color: ${backgroundCards};
         padding: 2%;
-        width: 50%;
+        width: 30%;
         justify-content: center;
       }
     }
@@ -99,15 +100,23 @@ export const CardProject = styled.div`
       justify-content: space-around;
 
       #description {
-        font-size: 140%;
+        font-size: 1rem;
       }
 
       #buttons {
         margin-top: 5%;
         a {
-          width: 45%;
+          width: 15%;
+          height: 15%;
+
         }
       }
+
+       #buttons > a > img {
+          width: 55%;
+          height: 55%;
+
+        }
     }
   }
 `;
