@@ -19,15 +19,15 @@ export const Description = styled.div`
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  margin: 14vh 20vw 10vh 45vw;
+  margin: 5vh 15vw 2rem 40vw;
 
   #title {
-    font-size: 60px;
+    font-size: 3rem;
     margin: 5px 0;
   }
   
   p {
-    font-size: 20px;
+    font-size: 1rem;
     text-align: justify;
   }
 
@@ -43,12 +43,12 @@ export const Description = styled.div`
 export const SkillsStyle = styled.div`
   display: flex;
   flex-direction: column;
-  margin: auto 20vw auto 45vw;
+  margin: auto 15vw auto 40vw;
   position: relative;
   
   #title {
     color: ${backgroundSide};
-    font-size: 55px;
+    font-size: 2rem;
     margin: 5px 0;
   }
   
@@ -56,22 +56,26 @@ export const SkillsStyle = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: space-around;
 
     #item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
       margin: 2%;
       margin-left: 0;
-      width: 30%;
+      width: 10%;
 
       img {
-        width: 100%;
+        width: 90%;
       }
   
       p {
         color: ${backgroundSide};
-        font-size: 22px;
+        font-size: 1rem;
         text-align: center;
-        text-transform: capitalize;
       }
     }
   }

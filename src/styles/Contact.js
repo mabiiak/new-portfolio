@@ -17,7 +17,7 @@ export const Informations = styled.div`
 
   img {
     border-radius: 50%;
-    width: 60%;
+    width: 40%;
   }
 
   p {
@@ -25,22 +25,22 @@ export const Informations = styled.div`
   }
 
   #name {
-    font-size: 2.3vw;
+    font-size: 2rem;
     margin: 5vh auto 0vh auto;
   }
 
   #sub-title {
-    font-size: 1.7vw;
+    font-size: 1.2rem;
     margin-bottom: 3vh;
     text-align: center;
-    width: 50%;
+    width: 40%;
   }
 
   #icons {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 60%;
+    width: 25%;
     margin-bottom: 2vh;
   }
 
@@ -49,14 +49,20 @@ export const Informations = styled.div`
   }
 
   #button {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    height: 1.3rem;
+    padding: 5%;
+    font-size: 1.3rem;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.5);
+    
+    text-decoration: none;
+    border-radius: 8px;
     background-color: ${backgroundCards};
     color: ${backgroundSide};
-    font-size: 180%;
-    padding: 5%;
-    text-align: center;
-    text-decoration: none;
-    width: 60%;
-    box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.5);
   }
 
   @media screen and (max-width: 600px) {
